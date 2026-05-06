@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
     "GET /libros?nombre=...": "Busca libros por nombre",
     "Ejemplo /libros?nombre cien años de soledad",
     "GET /libros/:id": "Obtiene un libro por su ID",
-    "Ejemplo /libros/4" "Mostrará el libro que corresponda a ese id",
+    "Ejemplo /libros/4" "Mostrará el libro que corresponda a ese id"
   }});
 });
 
