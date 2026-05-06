@@ -26,9 +26,7 @@ app.get("/", (req, res) => {
   res.json({ mensaje: "¡Bienvenido a la API de Libros!", rutas: {
     "GET /libros": "Lista todos los libros",
     "GET /libros?nombre=...": "Busca libros por nombre",
-    "Ejemplo /libros?nombre cien años de soledad",
     "GET /libros/:id": "Obtiene un libro por su ID",
-    "Ejemplo /libros/4" "Mostrará el libro que corresponda a ese id"
   }});
 });
 
