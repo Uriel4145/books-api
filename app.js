@@ -11,13 +11,30 @@ const libros = [
   { id: 4, nombre: "El principito", autor: "Antoine de Saint-Exupéry", anioPublicacion: 1943, genero: "Fábula" },
   { id: 5, nombre: "Harry Potter y la piedra filosofal", autor: "J.K. Rowling", anioPublicacion: 1997, genero: "Fantasía" },
   { id: 6, nombre: "Rayuela", autor: "Julio Cortázar", anioPublicacion: 1963, genero: "Novela experimental" },
+  { id: 7, nombre: "Don Segundo Sombra", autor: "Ricardo Güiraldes", anioPublicacion: 1926, genero: "Novela" },
+  { id: 8, nombre: "La sombra del viento", autor: "Carlos Ruiz Zafón", anioPublicacion: 2001, genero: "Misterio" },
+  { id: 9, nombre: "El amor en los tiempos del cólera", autor: "Gabriel García Márquez", anioPublicacion: 1985, genero: "Romance" },
+  { id: 10, nombre: "Ficciones", autor: "Jorge Luis Borges", anioPublicacion: 1944, genero: "Cuentos" },
+  { id: 11, nombre: "La casa de los espíritus", autor: "Isabel Allende", anioPublicacion: 1982, genero: "Realismo mágico" },
+  { id: 12, nombre: "Pedro Páramo", autor: "Juan Rulfo", anioPublicacion: 1955, genero: "Novela" },
+  { id: 13, nombre: "El túnel", autor: "Ernesto Sabato", anioPublicacion: 1948, genero: "Novela psicológica" },
+  { id: 14, nombre: "Fahrenheit 451", autor: "Ray Bradbury", anioPublicacion: 1953, genero: "Distopía" },
+  { id: 15, nombre: "El señor de los anillos", autor: "J.R.R. Tolkien", anioPublicacion: 1954, genero: "Fantasía" },
+
+Pégalos al final de tu arreglo libros, antes del ];. Luego guarda y ejecuta:
+bashgit add .
+git commit -m "Agregar más libros al arreglo"
+git push
+¿Quieres que también le agreguemos algún campo extra a los libros, como editorial o paginas? 😊Sonnet 4.6
 ];
 
 app.get("/", (req, res) => {
   res.json({ mensaje: "¡Bienvenido a la API de Libros!", rutas: {
     "GET /libros": "Lista todos los libros",
     "GET /libros?nombre=...": "Busca libros por nombre",
+    "Ejemplo /libros?nombre cien años de soledad",
     "GET /libros/:id": "Obtiene un libro por su ID",
+    "Ejemplo /libros/4" "Mostrará el libro que corresponda a ese id",
   }});
 });
 
