@@ -19,13 +19,7 @@ const libros = [
   { id: 12, nombre: "Pedro Páramo", autor: "Juan Rulfo", anioPublicacion: 1955, genero: "Novela" },
   { id: 13, nombre: "El túnel", autor: "Ernesto Sabato", anioPublicacion: 1948, genero: "Novela psicológica" },
   { id: 14, nombre: "Fahrenheit 451", autor: "Ray Bradbury", anioPublicacion: 1953, genero: "Distopía" },
-  { id: 15, nombre: "El señor de los anillos", autor: "J.R.R. Tolkien", anioPublicacion: 1954, genero: "Fantasía" },
-
-Pégalos al final de tu arreglo libros, antes del ];. Luego guarda y ejecuta:
-bashgit add .
-git commit -m "Agregar más libros al arreglo"
-git push
-¿Quieres que también le agreguemos algún campo extra a los libros, como editorial o paginas? 😊Sonnet 4.6
+  { id: 15, nombre: "El señor de los anillos", autor: "J.R.R. Tolkien", anioPublicacion: 1954, genero: "Fantasía" }
 ];
 
 app.get("/", (req, res) => {
